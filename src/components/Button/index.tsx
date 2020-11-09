@@ -6,6 +6,7 @@ interface ButtonProps {
   icon: any // help how do I interface an HTML element LOL
   className: string
   type: 'submit' | 'button' | 'reset'
+  disabled: boolean
 }
 
 const Button = ({
@@ -13,10 +14,11 @@ const Button = ({
   handleClick = () => {},
   icon = null,
   className = '',
-  type = 'button'
+  type = 'button',
+  disabled = false
 }: ButtonProps) => {
   return (
-    <button className={className} onClick={handleClick} type={type}>
+    <button className={className} onClick={handleClick} type={type} disabled={disabled}>
       {icon}
       {label}
     </button>

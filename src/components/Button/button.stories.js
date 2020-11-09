@@ -13,3 +13,9 @@ export const button = () => {
   const label = text('Text', 'Click here now!')
   return <Button label={label}></Button>
 }
+
+export const WithIcon = () => {
+  const label = text('Text', 'Click here now!')
+  const icon = text('Icon', '👀')
+  return <Button label={label} icon={icon}></Button>
+}

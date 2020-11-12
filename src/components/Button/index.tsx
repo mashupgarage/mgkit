@@ -39,11 +39,15 @@ const Button = ({
   disabled = false
 }: ButtonProps) => {
   return (
-    <StyledButton className={className} onClick={handleClick} type={type} disabled={disabled}>
+    <StyledButton
+      className={className}
+      onClick={handleClick}
+      type={type}
+      disabled={disabled}
+      data-testid='button'
+    >
       {icon}
-      <span>
-        {label}
-      </span>
+      <span>{label}</span>
     </StyledButton>
   )
 }

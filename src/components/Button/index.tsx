@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
+import styled from 'styled-components'
 
 interface ButtonProps {
   label: string
@@ -9,6 +10,26 @@ interface ButtonProps {
   disabled: boolean
 }
 
+const StyledButton = styled.button`
+  padding: 16px 24px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 200ms ease-out;
+  font-size: 1em;
+
+  > span {
+    opacity: 0.9;
+  }
+
+  &:hover {
+    background-color: #1d8af3;
+  }
+`
+
 const Button = ({
   label = 'Button',
   handleClick = () => {},
@@ -18,10 +39,12 @@ const Button = ({
   disabled = false
 }: ButtonProps) => {
   return (
-    <button className={className} onClick={handleClick} type={type} disabled={disabled}>
+    <StyledButton className={className} onClick={handleClick} type={type} disabled={disabled}>
       {icon}
-      {label}
-    </button>
+      <span>
+        {label}
+      </span>
+    </StyledButton>
   )
 }
 

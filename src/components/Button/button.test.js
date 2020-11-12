@@ -7,39 +7,39 @@ afterEach(cleanup)
 
 describe('<Button />', () => {
   it('renders the base component', () => {
-    const { getByText } = render(<Button />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button />)
+    const element = getByTestId('button')
     expect(element).toBeEnabled()
     expect(element).toHaveAttribute('type', 'button')
   })
 
   it('renders a disabled button', () => {
-    const { getByText } = render(<Button disabled />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button disabled />)
+    const element = getByTestId('button')
     expect(element).not.toBeEnabled()
   })
 
   it('renders a submit-type button', () => {
-    const { getByText } = render(<Button type='submit' />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button type='submit' />)
+    const element = getByTestId('button')
     expect(element).toHaveAttribute('type', 'submit')
   })
 
   it('renders a reset-type button', () => {
-    const { getByText } = render(<Button type='reset' />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button type='reset' />)
+    const element = getByTestId('button')
     expect(element).toHaveAttribute('type', 'reset')
   })
 
   it('renders the component with the corresponding className', () => {
-    const { getByText } = render(<Button className='sample-class' />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button className='sample-class' />)
+    const element = getByTestId('button')
     expect(element).toHaveClass('sample-class')
   })
 
   it('renders a button with an icon', () => {
-    const { getByText } = render(<Button icon={<i>👀</i>} />)
-    const element = getByText('Button')
+    const { getByTestId } = render(<Button icon={<i>👀</i>} />)
+    const element = getByTestId('button')
     expect(element).toContainHTML('<i>👀</i>')
   })
 })

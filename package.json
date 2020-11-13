@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook",
-    "test": "jest"
+    "build-storybook": "build-storybook -o ./build",
+    "test": "jest",
+    "chromatic": "npx chromatic --project-token bhxjqmwiyjj"
   },
   "author": "@raaims",
   "license": "ISC",

@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styled from 'styled-components'
 
-interface ButtonProps {
-  label: string
-  handleClick: VoidFunction
-  icon: any // help how do I interface an HTML element LOL
-  className: string
-  type: 'submit' | 'button' | 'reset'
-  disabled: boolean
+type ButtonProps = {
+  /** wat */
+  label?: string,
+  /** wat */
+  handleClick?: () => void,
+  icon?: any, // help how do I interface an HTML element LOL
+  className?: string,
+  type?: 'submit' | 'button' | 'reset',
+  disabled?: boolean
 }
 
 const StyledButton = styled.button`
@@ -30,14 +32,14 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({
+const Button: FC<ButtonProps> = ({
   label = 'Button',
   handleClick = () => {},
   icon = null,
   className = '',
   type = 'button',
   disabled = false
-}: ButtonProps) => {
+}) => {
   return (
     <StyledButton
       className={className}

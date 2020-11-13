@@ -1,6 +1,6 @@
 {
   "name": "mgkit",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha",
   "description": "Mashup Garage reusable component library",
   "main": "index.js",
   "scripts": {

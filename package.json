@@ -7,7 +7,8 @@
     "start": "start-storybook",
     "build-storybook": "build-storybook -o ./build",
     "test": "jest",
-    "chromatic": "npx chromatic --project-token bhxjqmwiyjj"
+    "chromatic": "npx chromatic --project-token bhxjqmwiyjj",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "@raaims",
   "license": "ISC",
@@ -26,6 +27,7 @@
     "@babel/preset-typescript": "^7.12.1",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/react": "^6.0.28",
+    "@storybook/storybook-deployer": "^2.8.7",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@types/jest": "^26.0.15",

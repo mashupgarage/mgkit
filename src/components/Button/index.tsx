@@ -1,14 +1,25 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 
-type ButtonProps = {
-  /** wat */
-  label?: string,
-  /** wat */
-  handleClick?: () => void,
-  icon?: any, // help how do I interface an HTML element LOL
-  className?: string,
-  type?: 'submit' | 'button' | 'reset',
+export interface ButtonProps {
+  label?: string
+  /**
+   * Button onClick handler.
+   */
+  handleClick?: () => void
+  /**
+   * An optional icon prop.
+   * Take note you have to add a margin or else it will be beside the label.
+   */
+  icon?: any // help how do I interface an HTML element LOL
+  /**
+   * Custom className in case you need to override the default styles
+   */
+  className?: string
+  type?: 'submit' | 'button' | 'reset'
+  /**
+   * `Disabled` state of the button. Has a default `not-allowed` custor style if true.
+   */
   disabled?: boolean
 }
 
@@ -30,9 +41,13 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #1d8af3;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `
 
-const Button: FC<ButtonProps> = ({
+export const Button:FC<ButtonProps> = ({
   label = 'Button',
   handleClick = () => {},
   icon = null,

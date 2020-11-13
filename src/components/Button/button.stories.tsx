@@ -1,24 +1,14 @@
-import React from 'react'
-import Button from './index'
-
-export const button = (args) => {
-  // const label = text('Text', 'Click here now!')
-  return <Button {...args}></Button>
-}
-
-button.args = {
-  label: 'Hello there',
-  handleClick: () => { console.log('Clicked') },
-  icon: '',
-  className: '',
-  type: 'button',
-  disabled: false
-}
+import React, { ComponentProps } from 'react'
+import { Story, Meta } from '@storybook/react/types-6-0'
+import { Button } from './index'
 
 export default {
-  title: 'Components/Button',
-  component: button,
-  parameters: {
-    componentSubtitle: 'Displays a button with basic styles and functionality'
-  }
-}
+  title: 'Button',
+  component: Button
+} as Meta
+
+const Template: Story<ComponentProps<typeof Button>> = args => (
+  <Button {...args} />
+)
+
+export const Base = Template.bind({})

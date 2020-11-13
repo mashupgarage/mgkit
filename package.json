@@ -8,7 +8,8 @@
     "build-storybook": "build-storybook -o ./build",
     "test": "jest",
     "chromatic": "npx chromatic --project-token bhxjqmwiyjj",
-    "deploy-storybook": "storybook-to-ghpages -- --ci"
+    "deploy-storybook": "storybook-to-ghpages -- --ci",
+    "build-package": "webpack -- mode production"
   },
   "author": "@raaims",
   "license": "ISC",

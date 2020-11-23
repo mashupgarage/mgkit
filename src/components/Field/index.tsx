@@ -61,7 +61,7 @@ export const Field: FC<FieldProps> = ({
   vertical = false
 }) => {
   return (
-    <Container vertical={vertical}>
+    <Container vertical={vertical} data-testid='field'>
       <label>{label}</label>
       <input type={type} />
     </Container>

@@ -1,0 +1,107 @@
+/*-----Settings----*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap");
+
+/*-----Variables----*/
+
+/*-----Font----*/
+$h1: 77.22px;
+$h2: 59.4px;
+$h3: 45.7px;
+$h4: 35.2px;
+$h5: 27px;
+$h6: 20.8px;
+$body: 14px;
+$button-text: 12px;
+$overline: 9px;
+$font: Nunito;
+$bold: 700;
+
+/*-----Colors----*/
+$primary: #15a89c;
+$primary-hover: #19c1b4;
+$secondary: #1c93d7;
+$bg1: #14131b;
+$bg2: #272044;
+$text: #ffffff;
+$text2: #231f34;
+$disabled: #b0b0c7;
+$disabled-text: #828282;
+
+/*-----Colors Light Mode----*/
+$primary-l: #4a156b;
+$secondary-l: #cb649d;
+$bg1-l: #ffffff;
+$bg2-l: #fbfbfb;
+$text-l: #231f34;
+$text2-l: #ffffff;
+
+/*-----Shadows or Glow----*/
+$gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+$shadow: 0 0 16px rgb(29 8 42 / 0.3);
+$glow: 0 0 16px rgb(19 151 135 / 0.7);
+$border-glow: inset 0 0 16px rgb(19 151 135 / 0.7);
+$flat-shadow: 4px 4px rgb(29 8 42 / 0.6);
+
+$circle: 2000px;
+$transition: all ease-in-out 0.2s;
+
+/*-----Template CSS----*/
+html {
+	background: none;
+}
+
+a {
+	text-decoration: none;
+}
+.kit-container {
+	background: $bg1;
+	padding: 16px;
+	margin: 0;
+	height: fit-content;
+
+	> * {
+		margin-bottom: 8px;
+	}
+}
+
+.css-text {
+	display: flex;
+	flex-direction: column;
+
+	> * {
+		margin: 0;
+		margin-bottom: 8px;
+	}
+}
+
+.break {
+	height: 2px;
+	background: $disabled;
+	width: 100%;
+	margin: 40px 0;
+	opacity: 50%;
+}
+
+.css-components {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+	> * {
+		margin: 0;
+		margin-right: 16px;
+		margin-bottom: 16px;
+	}
+
+	&.-vertical {
+		flex-direction: column;
+	}
+}
+
+/*-----Font Settings----*/
+body {
+	font-size: $body;
+	font-family: $font;
+	color: $text;
+}
+

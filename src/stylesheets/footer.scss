@@ -1,0 +1,184 @@
+@import './variables';
+
+.kit-footer {
+	width: 100vw;
+	margin: 0;
+	padding: 32px;
+	display: flex;
+	background: $bg1;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+
+	> .logos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	> .logos > * {
+		margin-bottom: 16px;
+	}
+
+	> .logos > .company-logo.-light {
+		visibility: hidden;
+		display: none;
+	}
+
+	> .logos > .links {
+		font-size: $h6;
+		display: flex;	
+	}
+
+	> .logos > .links > a {
+		margin: 0 16px;
+	}
+
+	> .logos > .links > .social {
+		color: $text
+	}
+
+	> .logos > .links > a:hover {
+		opacity: 0.8;
+	}
+
+	> .actions {
+		display: flex;
+		flex-direction: column;
+	}
+
+	> .actions > .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px;
+		color: $disabled-text;
+	}
+
+	> .actions > .container:nth-child(2) {
+		margin: 0 64px;
+	}
+
+	> .actions > .container > * {
+		margin-bottom: 16px;
+	}
+
+	> .actions > .container > .title {
+		font-size: $h6;
+	}
+
+	> .actions > .container > .link {
+		color: $disabled-text;
+		font-size: $overline;
+	}
+
+	> .actions > .container > .link:hover {
+		opacity: 0.8;
+	}
+
+	> .actions > .container > .-caps {
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+
+	&.-light {
+		background: $bg2-l;
+	}
+
+	&.-light > .logos > .company-logo {
+		visibility: hidden;
+		display: none;
+	}
+
+	&.-light > .logos > .company-logo.-light {
+		visibility: visible;
+		display: block;
+	}
+
+	&.-light > .logos > .links {
+		color: $text-l;
+	}
+
+	&.-light > .logos > .links > .social {
+		color: $text-l;
+	}
+
+	@media only screen and (min-width: 832px) {
+		> .actions {
+			flex-direction: row;
+		}
+	}
+}
+
+.kit-footer.-mega {
+	align-items: flex-start;
+	
+
+	> .header > .description {
+		margin: 16px 0;
+		color: $disabled-text;
+		font-size: $body;
+		line-height: 23px;
+	}
+
+	> .header > .logos > .company-logo.-light {
+		visibility: hidden;
+		display: none;
+	}
+
+	> .actions > .container {
+		align-items: flex-start;
+		padding: 0;
+	}
+
+	> .actions > .container:nth-child(2) {
+		margin: 0;
+	}
+
+	> .actions > .container > .links > * {
+		margin-right: 8px;
+		font-size: $body;
+		color: $text;
+	}
+
+	> .actions > .container > .links > .social {
+		color: $text;
+	}
+
+
+	&.-light > .header > .logos > .company-logo {
+		visibility: hidden;
+		display: none;
+	}
+
+	&.-light > .header > .logos > .company-logo.-light {
+		visibility: visible;
+		display: block;
+	}
+
+	&.-light > .actions > .container > .links > .social {
+		color: $text-l;
+	}
+
+	@media only screen and (min-width: 832px) {
+		justify-content: space-between;
+		flex-direction: row;
+
+		> .header {
+			width: 50vw;
+		}
+
+		> .actions {
+			max-width: 50vw;
+			box-sizing: border-box;
+		}
+
+		> .actions > .container {
+			padding: 0 16px;
+		}
+
+		> .actions > .container > .title {
+			font-size: $body;
+		}
+	}
+}

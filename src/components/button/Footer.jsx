@@ -1,15 +1,18 @@
 import React from 'react';
+import logo from  '../../assets/Logo.svg';
+import facebook from '../../assets/FB.svg';
+import instagram from '../../assets/Insta.svg';
+import linkedin from '../../assets/Linkedin.svg';
 
 export function Footer({ style }) {
   return (
     <div className={style}>
 			<div class="logos">
-				<img class="company-logo" src="https://i.imgur.com/8zMpkVw.png" alt="Company Logo"/> 
-        <img class="company-logo -light" src="https://i.imgur.com/2Jqclhk.png" alt="Company Logo"></img>
+				<img class="company-logo" src={logo} alt="Company Logo"/> 
 				<div class="links">
-					<a class="social" href="#"> X </a>
-          <a class="social" href="#"> X </a>
-          <a class="social" href="#"> X </a>
+					<a class="social" href="#"> <img class="brand" src={facebook} alt="facebook.com"/>  </a>
+          <a class="social" href="#"> <img class="brand" src={instagram} alt="instagram.com"/> </a>
+          <a class="social" href="#"> <img class="brand" src={linkedin} alt="linkedin.com"/> </a>
 				</div>
 			</div>
 			<div class="actions">

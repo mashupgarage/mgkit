@@ -20,11 +20,6 @@
 		margin-bottom: 16px;
 	}
 
-	> .logos > .company-logo.-light {
-		visibility: hidden;
-		display: none;
-	}
-
 	> .logos > .links {
 		font-size: $h6;
 		display: flex;	
@@ -40,6 +35,10 @@
 
 	> .logos > .links > a:hover {
 		opacity: 0.8;
+	}
+
+	> .logos > .links > .social > .brand {
+		height: $h5;
 	}
 
 	> .actions {
@@ -86,13 +85,7 @@
 	}
 
 	&.-light > .logos > .company-logo {
-		visibility: hidden;
-		display: none;
-	}
-
-	&.-light > .logos > .company-logo.-light {
-		visibility: visible;
-		display: block;
+		filter: invert(90%);
 	}
 
 	&.-light > .logos > .links {
@@ -100,8 +93,9 @@
 	}
 
 	&.-light > .logos > .links > .social {
-		color: $text-l;
+		filter: invert(90%);
 	}
+	
 
 	@media only screen and (min-width: 832px) {
 		> .actions {
@@ -121,11 +115,6 @@
 		line-height: 23px;
 	}
 
-	> .header > .logos > .company-logo.-light {
-		visibility: hidden;
-		display: none;
-	}
-
 	> .actions > .container {
 		align-items: flex-start;
 		padding: 0;
@@ -141,23 +130,23 @@
 		color: $text;
 	}
 
-	> .actions > .container > .links > .social {
-		color: $text;
+	> .actions > .container > .links > *:hover {
+		opacity: 50%;
+	}
+
+
+
+	> .actions > .container > .links > .social > .brand{
+		height: $h6;
 	}
 
 
 	&.-light > .header > .logos > .company-logo {
-		visibility: hidden;
-		display: none;
-	}
-
-	&.-light > .header > .logos > .company-logo.-light {
-		visibility: visible;
-		display: block;
+		filter: invert(90%);
 	}
 
 	&.-light > .actions > .container > .links > .social {
-		color: $text-l;
+		filter: invert(50%);
 	}
 
 	@media only screen and (min-width: 832px) {

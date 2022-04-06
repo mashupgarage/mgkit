@@ -11,9 +11,9 @@ export function FooterAlt({ style }) {
 				<div class="logos"> 
         	<img class="company-logo" src={logo} alt="Company Logo"/> 
 				</div>
-				<div class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus urna a urna efficitur, quis semper urna lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus urna a urna efficitur, quis semper urna lobortis Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</div> 
-				</div>
+				<div class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus urna a urna efficitur, quis semper urna lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus urna a urna efficitur, quis semper urna lobortis Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </div> 
+			</div>
 			<div class="actions">
 				<div class="container">
 					<div class="title">Products</div>
@@ -26,18 +26,18 @@ export function FooterAlt({ style }) {
 					<a class="link -caps" href="#">Projects</a>
 					<a class="link -caps" href="#">Our Team</a>
 					<a class="link -caps" href="#">Blog</a>
-			</div>
+			  </div>
 				<div class="container">
-					<div class="title">Contact Us</div>
-					<a class="link" href="#">placeholder@gmail.com</a>
-					<a class="link" href="#">(+63) 917 1230 456</a>
-					<div class="links">
-						<a class="social" href="#"> <img class="brand" src={facebook} alt="facebook.com"/>  </a>
-          <a class="social" href="#"> <img class="brand" src={instagram} alt="instagram.com"/> </a>
-          <a class="social" href="#"> <img class="brand" src={linkedin} alt="linkedin.com"/> </a>
-						</div>
-					</div>
+          <div class="title">Contact Us</div>
+          <a class="link" href="#">placeholder@gmail.com</a>
+          <a class="link" href="#">(+63) 917 1230 456</a>
+          <div class="links">
+            <a class="social" href="#"> <img class="brand" src={facebook} alt="facebook.com"/>  </a>
+            <a class="social" href="#"> <img class="brand" src={instagram} alt="instagram.com"/> </a>
+            <a class="social" href="#"> <img class="brand" src={linkedin} alt="linkedin.com"/> </a>
+          </div>
 				</div>
 			</div>
+		</div>
   );
 }

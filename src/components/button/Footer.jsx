@@ -25,12 +25,12 @@ export function Footer({ style }) {
 					<div class="title">About Us</div>
 					<a class="link -caps" href="#">Projects</a>
 					<a class="link -caps" href="#">Blog</a>
-			</div>
+			  </div>
 				<div class="container">
 					<div class="title">Contact Us</div>
 					<a class="link" href="#">placeholder@gmail.com</a>
 					<a class="link" href="#">(+63) 917 1230 456</a>
-			</div>
+			  </div>
 			</div>
 		</div>
   );

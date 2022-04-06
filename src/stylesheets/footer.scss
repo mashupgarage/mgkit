@@ -10,43 +10,43 @@
 	align-items: center;
 	box-sizing: border-box;
 
-	> .logos {
+	>.logos {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	> .logos > * {
+	>.logos>* {
 		margin-bottom: 16px;
 	}
 
-	> .logos > .links {
+	>.logos>.links {
 		font-size: $h6;
-		display: flex;	
+		display: flex;
 	}
 
-	> .logos > .links > a {
+	>.logos>.links>a {
 		margin: 0 16px;
 	}
 
-	> .logos > .links > .social {
+	>.logos>.links>.social {
 		color: $text
 	}
 
-	> .logos > .links > a:hover {
+	>.logos>.links>a:hover {
 		opacity: 0.8;
 	}
 
-	> .logos > .links > .social > .brand {
+	>.logos>.links>.social>.brand {
 		height: $h5;
 	}
 
-	> .actions {
+	>.actions {
 		display: flex;
 		flex-direction: column;
 	}
 
-	> .actions > .container {
+	>.actions>.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -54,28 +54,28 @@
 		color: $disabled-text;
 	}
 
-	> .actions > .container:nth-child(2) {
+	>.actions>.container:nth-child(2) {
 		margin: 0 64px;
 	}
 
-	> .actions > .container > * {
+	>.actions>.container>* {
 		margin-bottom: 16px;
 	}
 
-	> .actions > .container > .title {
+	>.actions>.container>.title {
 		font-size: $h6;
 	}
 
-	> .actions > .container > .link {
+	>.actions>.container>.link {
 		color: $disabled-text;
 		font-size: $overline;
 	}
 
-	> .actions > .container > .link:hover {
+	>.actions>.container>.link:hover {
 		opacity: 0.8;
 	}
 
-	> .actions > .container > .-caps {
+	>.actions>.container>.-caps {
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
@@ -84,21 +84,21 @@
 		background: $bg2-l;
 	}
 
-	&.-light > .logos > .company-logo {
+	&.-light>.logos>.company-logo {
 		filter: invert(90%);
 	}
 
-	&.-light > .logos > .links {
+	&.-light>.logos>.links {
 		color: $text-l;
 	}
 
-	&.-light > .logos > .links > .social {
+	&.-light>.logos>.links>.social {
 		filter: invert(90%);
 	}
-	
+
 
 	@media only screen and (min-width: 832px) {
-		> .actions {
+		>.actions {
 			flex-direction: row;
 		}
 	}
@@ -106,46 +106,46 @@
 
 .kit-footer.-mega {
 	align-items: flex-start;
-	
 
-	> .header > .description {
+
+	>.header>.description {
 		margin: 16px 0;
 		color: $disabled-text;
 		font-size: $body;
 		line-height: 23px;
 	}
 
-	> .actions > .container {
+	>.actions>.container {
 		align-items: flex-start;
 		padding: 0;
 	}
 
-	> .actions > .container:nth-child(2) {
+	>.actions>.container:nth-child(2) {
 		margin: 0;
 	}
 
-	> .actions > .container > .links > * {
+	>.actions>.container>.links>* {
 		margin-right: 8px;
 		font-size: $body;
 		color: $text;
 	}
 
-	> .actions > .container > .links > *:hover {
+	>.actions>.container>.links>*:hover {
 		opacity: 50%;
 	}
 
 
 
-	> .actions > .container > .links > .social > .brand{
+	>.actions>.container>.links>.social>.brand {
 		height: $h6;
 	}
 
 
-	&.-light > .header > .logos > .company-logo {
+	&.-light>.header>.logos>.company-logo {
 		filter: invert(90%);
 	}
 
-	&.-light > .actions > .container > .links > .social {
+	&.-light>.actions>.container>.links>.social {
 		filter: invert(50%);
 	}
 
@@ -153,20 +153,20 @@
 		justify-content: space-between;
 		flex-direction: row;
 
-		> .header {
+		>.header {
 			width: 50vw;
 		}
 
-		> .actions {
+		>.actions {
 			max-width: 50vw;
 			box-sizing: border-box;
 		}
 
-		> .actions > .container {
+		>.actions>.container {
 			padding: 0 16px;
 		}
 
-		> .actions > .container > .title {
+		>.actions>.container>.title {
 			font-size: $body;
 		}
 	}

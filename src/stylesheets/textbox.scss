@@ -1,0 +1,83 @@
+@import './variables';
+
+.kit-textbox {
+	color: $text;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	border: 1px solid $primary;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	background: none;
+
+  > img.icon {
+    display: none;
+    visibility: none;
+  }
+
+	> span {
+		font-size: $body;
+		margin-right: 8px;
+	}
+	> input {
+		background: none;
+		color: $text;
+		outline: none;
+		border: none;
+		width: 100%;
+		font-size: $body;
+	}
+	> input.search:focus {
+		outline: none;
+	}
+
+  &.-disabled {
+    border: 1px solid $disabled;
+    pointer-events: none; 
+  }
+
+  &.-disabled > input::placeholder {
+    opacity: 50%;
+  }
+
+  &.-error {
+    border: 1px solid $error;
+    color: $error;
+  }
+
+  &.-error > input::placeholder {
+    color: $error;
+  }
+
+  &.-error::after {
+    content:'!';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: $text;
+    background-color: $error;
+    border-radius: $circle;
+    width: 16px;
+    height: 16px;
+  }
+
+	&.-light {
+		color: $text-l;
+		border: 1px solid $primary-l;
+	}
+
+	&.-light > input {
+		color: $text-l;
+	}
+
+  &.-light > img {
+     filter: invert(100%);
+  }
+
+  &.-search > img.icon {
+     display: block;
+    visibility: visible;
+  }
+}

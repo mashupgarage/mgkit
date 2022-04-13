@@ -20,6 +20,23 @@
 		font-size: $body;
 	}
 
+  &.-light {
+    border: 1px solid $primary-l;
+  }
+
+  &.-light > select {
+    color: $text-l;
+  }
+
+  &.-disabled  {
+    border: 1px solid $disabled;
+    pointer-events: none; 
+  }
+
+  &.-disabled > select  {
+    color: $disabled-text;
+  }
+
 	&.-lineless {
 		border: none;
 	}

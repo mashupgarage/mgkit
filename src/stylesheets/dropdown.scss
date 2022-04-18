@@ -1,0 +1,51 @@
+@import './variables';
+
+.kit-dropdown {
+	height: 32px;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	border: 1px solid $primary;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	background: none;
+	min-width: 120px;
+
+	> select {
+		background: none;
+		color: $text;
+		outline: none;
+		border: none;
+		width: 100%;
+		font-size: $body;
+	}
+
+  &.-light {
+    border: 1px solid $primary-l;
+  }
+
+  &.-light > select {
+    color: $text-l;
+  }
+
+  &.-disabled  {
+    border: 1px solid $disabled;
+    pointer-events: none; 
+  }
+
+  &.-disabled > select  {
+    color: $disabled-text;
+  }
+
+	&.-lineless {
+		border: none;
+	}
+
+	&.-lineless > * {
+		color: $disabled;
+		text-transform: uppercase;
+		font-weight: $bold;
+		letter-spacing: 2px;
+		margin-right: 0;
+	}
+}

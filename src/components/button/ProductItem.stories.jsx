@@ -8,3 +8,4 @@ export default {
 };
 
 export const Primary = () => <ProductItem style="product-item"/>;
+export const Light = () => <ProductItem style="product-item -light"/>;

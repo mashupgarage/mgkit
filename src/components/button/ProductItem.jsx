@@ -4,9 +4,9 @@ import cart from "../../assets/Cart.svg";
 export function ProductItem({ style }) {
   return (
     <div class={style}>
-      <a class="cart" href="#" aria-hidden="true">
+      <button class="cart" href="#" aria-hidden="true">
         <img class="brand" src={cart} alt="Add to Cart" />
-      </a>
+      </button>
       <a class="product" href="#">
         <div class="image-container">
           <img

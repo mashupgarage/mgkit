@@ -9,4 +9,3 @@ export default {
 
 export const Primary = () => <TopNavbar style="kit-navbar"/>
 export const PrimaryLight = () => <TopNavbar style="kit-navbar -light"/>;
-

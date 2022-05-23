@@ -121,3 +121,85 @@
     }
   }
 }
+
+.kit-sidebar {
+  height: 100vh;
+  background: $bg2;
+  width: 160px;
+  padding: 32px 32px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+
+  > img {
+    max-height: 40px;
+    object-fit: contain;
+    margin-bottom: 32px;
+  }
+  > .navigation > a {
+    margin-bottom: 16px;
+  }
+
+  > .navigation > .link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $primary;
+    text-decoration: none;
+    font-size: $body;
+    border-radius: 4px;
+    padding: 8px;
+    transition: all ease-in-out 0.2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  > .navigation > .link:hover {
+    background: $primary;
+    color: $text;
+    font-weight: $bold;
+    transition: all ease-in-out 0.2s;
+  }
+
+  > .navigation > .link > span {
+    margin-right: 8px;
+  }
+
+  > .profile {
+    margin-bottom: 56px;
+    margin-top: auto;
+  }
+
+  &.-light > img.logo {
+    filter: invert(90%);
+  }
+
+  &.-light {
+    background: $bg2-l;
+  }
+
+  &.-light > .navigation > .link {
+    color: $primary-l;
+  }
+
+  &.-light > .navigation > .link:hover {
+    background: $primary-l;
+    color: $text;
+  }
+
+  &.-compact {
+    align-items: center;
+    width: 64px;
+  }
+
+  &.-compact > .navigation > .link {
+    width: fit-content;
+  }
+
+  &.-compact > .navigation > .link > span {
+    margin-right: 0;
+    padding: 4px 6px;
+    font-size: 18px;
+  }
+}

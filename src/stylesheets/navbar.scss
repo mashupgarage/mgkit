@@ -1,0 +1,205 @@
+@import "./variables";
+
+.kit-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $bg2;
+  min-height: 32px;
+  padding: 16px 32px;
+  color: $text;
+  font-size: $h5;
+  justify-content: space-between;
+  z-index: 10;
+  box-sizing: border-box;
+
+  > .profile {
+    width: 32px;
+    height: 32px;
+    background: $bg1;
+    border-radius: $circle;
+    margin-left: auto;
+    visibility: hidden;
+    display: none;
+  }
+
+  > img.monogram {
+    width: 40px;
+  }
+
+  > img.monogram.-light {
+    display: none;
+    visibility: none;
+  }
+
+  > .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  > .links > span {
+    cursor: pointer;
+    visibility: visible;
+    display: block;
+  }
+
+  > .links > span > img.menu {
+    height: 16px;
+  }
+
+  > .links > span:hover {
+    opacity: 0.8;
+    transition: all ease-in-out 0.2s;
+  }
+
+  > .links > a {
+    margin-right: 32px;
+    font-size: $body;
+    visibility: hidden;
+    text-decoration: none;
+    color: $text;
+    display: none;
+    padding-bottom: 8px;
+    transition: border-bottom ease-in-out 0.2s;
+  }
+
+  > .links > a:hover {
+    color: $primary;
+    margin-top: -2px;
+    border-bottom: 2px solid $primary;
+    transition: border-bottom ease-in-out 0.2s;
+  }
+
+  &.-light {
+    background-color: $bg2-l;
+    color: $text-l;
+  }
+
+  &.-light > .links > a {
+    color: $text-l;
+  }
+
+  &.-light > .links > a:hover {
+    color: $primary-l;
+    border-bottom: 2px solid $primary-l;
+  }
+
+  &.-light > img.monogram.-primary {
+    display: none;
+    visibility: none;
+  }
+
+  &.-light > img.monogram.-light {
+    display: block;
+    visibility: visible;
+  }
+
+  &.-light > .links > span > img.menu {
+    filter: invert(1);
+  }
+
+  @media only screen and (min-width: 832px) {
+    justify-content: flex-start;
+    position: relative;
+    > .profile {
+      visibility: visible;
+      display: block;
+    }
+
+    > .links {
+      margin-left: 32px;
+    }
+
+    > .links > span {
+      visibility: hidden;
+      display: none;
+    }
+    > .links > a {
+      visibility: visible;
+      display: block;
+    }
+  }
+}
+
+.kit-sidebar {
+  height: 100vh;
+  background: $bg2;
+  width: 160px;
+  padding: 32px 32px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+
+  > img {
+    max-height: 40px;
+    object-fit: contain;
+    margin-bottom: 32px;
+  }
+  > .navigation > a {
+    margin-bottom: 16px;
+  }
+
+  > .navigation > .link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $primary;
+    text-decoration: none;
+    font-size: $body;
+    border-radius: 4px;
+    padding: 8px;
+    transition: all ease-in-out 0.2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  > .navigation > .link:hover {
+    background: $primary;
+    color: $text;
+    font-weight: $bold;
+    transition: all ease-in-out 0.2s;
+  }
+
+  > .navigation > .link > span {
+    margin-right: 8px;
+  }
+
+  > .profile {
+    margin-bottom: 56px;
+    margin-top: auto;
+  }
+
+  &.-light > img.logo {
+    filter: invert(90%);
+  }
+
+  &.-light {
+    background: $bg2-l;
+  }
+
+  &.-light > .navigation > .link {
+    color: $primary-l;
+  }
+
+  &.-light > .navigation > .link:hover {
+    background: $primary-l;
+    color: $text;
+  }
+
+  &.-compact {
+    align-items: center;
+    width: 64px;
+  }
+
+  &.-compact > .navigation > .link {
+    width: fit-content;
+  }
+
+  &.-compact > .navigation > .link > span {
+    margin-right: 0;
+    padding: 4px 6px;
+    font-size: 18px;
+  }
+}

@@ -20,6 +20,10 @@
     visibility: hidden;
   }
 
+  > .cart > span {
+    font-size: $h6;
+  }
+
   > .cart:before {
     visibility: visible;
     text-decoration: none;

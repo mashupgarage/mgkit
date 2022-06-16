@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from  '../../assets/Logo.svg';
-import facebook from '../../assets/FB.svg';
-import instagram from '../../assets/Insta.svg';
-import linkedin from '../../assets/Linkedin.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
+console.log(FontAwesomeIcon)
 
 export function Footer({ style }) {
   return (
@@ -10,9 +11,9 @@ export function Footer({ style }) {
 			<div class="logos">
 				<img class="company-logo" src={logo} alt="Company Logo"/> 
 				<div class="links">
-					<a class="social" href="#"> <img class="brand" src={facebook} alt="facebook.com"/>  </a>
-          <a class="social" href="#"> <img class="brand" src={instagram} alt="instagram.com"/> </a>
-          <a class="social" href="#"> <img class="brand" src={linkedin} alt="linkedin.com"/> </a>
+					<a class="social" href="#"> <FontAwesomeIcon icon={brands('facebook')} color=''/> </a>
+          <a class="social" href="#"> <FontAwesomeIcon icon={brands('instagram')} color=''/> </a>
+          <a class="social" href="#"> <FontAwesomeIcon icon={brands('linkedin')} color=''/> </a>
 				</div>
 			</div>
 			<div class="actions">

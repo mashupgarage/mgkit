@@ -1,11 +1,14 @@
 import React from "react";
-import cart from "../../assets/Cart.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
+console.log(FontAwesomeIcon)
 
 export function ProductItem({ style }) {
   return (
     <div class={style}>
       <button class="cart" href="#" aria-hidden="true">
-        <img class="brand" src={cart} alt="Add to Cart" />
+       <span><FontAwesomeIcon icon={solid('cart-arrow-down')} color=''/></span>
       </button>
       <a class="product" href="#">
         <div class="image-container">

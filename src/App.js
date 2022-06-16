@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faSearch, faFontAwesome } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas, faBars, faSearch, faFontAwesome);
 
 function App() {
   return (

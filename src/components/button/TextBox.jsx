@@ -4,11 +4,11 @@ import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import
 
 console.log(FontAwesomeIcon)
 
-export function TextBox({ style }) {
+export function TextBox({ style, input, type }) {
   return (
     <div class={style}> 
       <span><FontAwesomeIcon icon={solid('magnifying-glass')} color=''/></span>
-		  <input type="text" placeholder="Input text here"></input>
+		  <input type={type} placeholder={input}></input>
     </div>
   );
 }

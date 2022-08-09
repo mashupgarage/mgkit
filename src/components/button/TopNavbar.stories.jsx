@@ -3,7 +3,7 @@ import '../../stylesheets/navbar.scss';
 import { TopNavbar } from './TopNavbar';
 
 export default {
-  title: 'Top Navbar',
+  title: 'Components/Top Navbar',
   component: TopNavbar
 };
 

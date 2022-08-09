@@ -1,0 +1,90 @@
+@import "./variables";
+
+.log-in {
+  display: flex;
+  color: $text;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+
+  > .illustration {
+    position: absolute;
+    width: 500px;
+    z-index: 4;
+    right: 24px;
+  }
+
+  > .background {
+    display: flex;
+    align-items: center;
+  }
+
+  > .background > * {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  > .background > .gradient {
+    background: $color-gradient;
+    z-index: 1;
+  }
+
+  > .background > .image {
+    z-index: 2;
+    background-image: url("../assets/Background.png");
+    opacity: 0.3;
+  }
+
+  > .container {
+    display: flex;
+    height: 100vh;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $bg1;
+    position: relative;
+    left: -5%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    z-index: 3;
+  }
+
+  > .container > .monogram {
+    width: 64px;
+    margin-bottom: 16px;
+  }
+
+  > .container > .title {
+    font-size: $h4;
+  }
+
+  > .container > .subtitle {
+    font-size: $h6;
+    margin-bottom: 48px;
+  }
+
+  > .container > .subtitle > a {
+    color: $primary;
+  }
+}
+
+.login-container {
+  width: 400px;
+  margin-bottom: 32px;
+
+  > .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  > .actions > a {
+    color: $primary;
+  }
+}
+
+.kit-button.-login {
+  width: 400px;
+}

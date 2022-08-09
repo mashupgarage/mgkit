@@ -4,7 +4,7 @@ import { Footer } from './Footer';
 import { FooterAlt } from './FooterAlt';
 
 export default {
-  title: 'Footer',
+  title: 'Components/Footer',
   component: Footer
 };
 

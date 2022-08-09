@@ -3,7 +3,7 @@ import '../../stylesheets/dropdown.scss';
 import { DropDown } from './DropDown';
 
 export default {
-  title: 'Drop Down',
+  title: 'Components/Drop Down',
   component: DropDown
 };
 

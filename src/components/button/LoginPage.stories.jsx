@@ -18,10 +18,3 @@ Primary.args = {
   textbox: "kit-textbox",
   button: "kit-button -login",
 };
-
-export const LightMode = Template.bind({});
-LightMode.args = {
-  mode: "log-in -light",
-  textbox: "kit-textbox -light",
-  button: ".kit-button -light"
-};

@@ -39,10 +39,9 @@
   justify-content: center;
   background-color: $primary;
   border-radius: 4px;
-  font-size: $button-text;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  font-size: $body;
   cursor: pointer;
+  color: $text;
 
   &:hover {
     opacity: 0.5;

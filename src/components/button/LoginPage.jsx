@@ -32,7 +32,7 @@ export function LoginPage({ mode, textbox, button }) {
             </a>
           </div>
         </div>
-        <Button style={button} />
+        <Button style={button} label="Log in" />
       </div>
     </div>
   );

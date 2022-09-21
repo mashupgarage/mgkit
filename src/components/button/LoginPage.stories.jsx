@@ -5,6 +5,7 @@ import '../../stylesheets/button.scss';
 import { LoginPage } from './LoginPage';
 
 
+
 export default {
   title: 'Templates/Log In',
   component: LoginPage

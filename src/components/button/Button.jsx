@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Button({ style }) {
+export function Button({ style,label }) {
   return (
     <button type="button" className={style}>
-      Button
+      {label}
     </button>
   );
 }

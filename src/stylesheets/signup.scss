@@ -1,0 +1,129 @@
+@import "./variables";
+
+.sign-up {
+  display: flex;
+  color: $text;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  justify-content: center;
+
+  > .background {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+  }
+
+  > .background > * {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  > .background > .gradient {
+    background: $color-gradient;
+    z-index: 1;
+  }
+
+  > .background > .image {
+    z-index: 2;
+    background-image: url("../assets/Background.png");
+    opacity: 0.3;
+  }
+
+  > .container {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    min-width: 560px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $bg1;
+    position: absolute;
+    z-index: 3;
+    box-sizing: content-box;
+    padding: 40px 0;
+  }
+
+  > .container > .monogram {
+    width: 64px;
+    margin-bottom: 16px;
+  }
+
+  > .container > .title {
+    font-size: $h4;
+  }
+
+  > .container > .subtitle {
+    font-size: $h6;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  > .container > .subtitle > a {
+    color: $primary;
+  }
+
+  @media only screen and (min-width: 832px) {
+    > .container {
+      padding: 0;
+    }
+  }
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+    min-width: 75vw;
+    box-sizing: content-box;
+  }
+
+  > .row > * {
+    margin-bottom: 8px;
+  }
+
+  > .row > *:nth-child(2) {
+      margin-top: 8px;
+    }
+
+  @media only screen and (min-width: 832px) {
+    > .row {
+      flex-direction: row;
+      min-width: 50vw;
+    }
+
+    > .row > *:nth-child(2) {
+      margin-left: 24px;
+      margin-top: 0;
+    }
+  }
+}
+
+.kit-button.-signup {
+  min-width: 240px;
+  width: 75vw;
+  padding: 24px 0;
+  margin-top: 24px;
+
+    @media only screen and (min-width: 832px) {
+      width: auto;
+    }
+}
+
+.kit-textbox.-signup {
+  width: 100%;
+}

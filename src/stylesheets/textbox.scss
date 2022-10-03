@@ -11,14 +11,11 @@
 	margin-bottom: 16px;
 	background: none;
 
-  > img.icon {
-    display: none;
-    visibility: none;
-  }
-
 	> span {
 		font-size: $body;
 		margin-right: 8px;
+    display: none;
+    visibility: none;
 	}
 	> input {
 		background: none;
@@ -76,7 +73,7 @@
      filter: invert(100%);
   }
 
-  &.-search > img.icon {
+  &.-search > span {
      display: block;
     visibility: visible;
   }

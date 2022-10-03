@@ -3,7 +3,7 @@ import '../../stylesheets/product-item.scss';
 import { ProductItem } from './ProductItem';
 
 export default {
-  title: 'Product Item',
+  title: 'Components/Product Item',
   component: ProductItem
 };
 

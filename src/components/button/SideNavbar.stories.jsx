@@ -3,7 +3,7 @@ import '../../stylesheets/navbar.scss';
 import { SideNavbar } from './SideNavbar';
 
 export default {
-  title: 'Side Navbar',
+  title: 'Components/Side Navbar',
   component: SideNavbar
 };
 
